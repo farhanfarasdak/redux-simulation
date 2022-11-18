@@ -2,7 +2,7 @@ import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 
 const Home = () => {
-  const counter = useSelector((state) => state.counter)
+  const counter = useSelector((state) => state.counterReducer.counter)
 
   return(
     <div>

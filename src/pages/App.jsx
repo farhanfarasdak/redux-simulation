@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { action } from "../redux/reducer";
-import { pokemonAction, retrievePokemons } from "../redux/reducer/pokemon";
+import { retrievePokemons } from "../redux/reducer/pokemon";
 
 const App = () => {
   const counter = useSelector((state) => {
