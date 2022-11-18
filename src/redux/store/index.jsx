@@ -1,8 +1,14 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import counterSlice from "../reducer";
+import pokemonSlice from "../reducer/pokemon";
+
+const allReducers = combineReducers({
+  counterReducer: counterSlice.reducer,
+  pokemonReducer: pokemonSlice.reducer
+})
 
 const myStore = configureStore({
-  reducer: counterSlice.reducer
+  reducer: allReducers
 })
 
 export default myStore

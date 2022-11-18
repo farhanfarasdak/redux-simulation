@@ -19,3 +19,21 @@ const counterSlice = createSlice({
 
 export const action = counterSlice.actions
 export default counterSlice
+
+
+
+// const reducerFn = (state = { counter: 0 },action) => {
+//   if(action.type === 'INC'){
+//     const newState = { counter: state.counter + 1 }
+//     return newState
+//   }
+
+//   if(action.type === 'DCR'){
+//     const newState = { counter: state.counter - 1 }
+//     return newState
+//   }
+  
+//   return state
+// }
+
+// export default reducerFn
